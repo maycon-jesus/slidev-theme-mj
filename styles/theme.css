@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --geist-error: #e00;
+    --geist-success: #0070f3;
+    --geist-warning: #f5a623;
+    --geist-violet: #7928ca;
+    --geist-cyan-light: #79ffe1;
+    --geist-cyan: #50e3c2;
+    --geist-highlight-purple: #f81ce5;
+
+    --geist-radius: 5px;
+
+    --geist-gap-quarter: 6px;
+    --geist-gap-half: 12px;
+    --geist-gap: 24px;
+    --geist-gap-double: 48px;
+
+    --slidev-theme-primary: var(--mj-primary);
+    --slidev-theme-secondary: var(--mj-secondary);
+
+    --mj-primary: #D72323;
+    --mj-primary-foreground: white;
+    --mj-secondary: #F56217;
+    --mj-secondary-foreground: white;
+    --mj-primary-secondary-gradient: linear-gradient(to right bottom, var(--mj-primary), var(--mj-secondary));
+
+    --mj-font-family-title: "Poppins", sans-serif;
+    --mj-content-padding: 32px;
+    --mj-content-padding-small: 16px;
+    --mj-content-padding-large: 64px;
+}
+
+#slide-content {
+    color: var(--mj-foreground);
+    background-color: var(--mj-background);
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px !important;
+    @apply antialiased;
+}
+
+html.light, .mj-theme-light {
+    --mj-background: #fff;
+    --mj-foreground: #000;
+    --mj-foreground-2: #333;
+}
+html.dark, .mj-theme-dark {
+    --mj-background: #060708;
+    --mj-foreground: #fff;
+    --mj-foreground-2: #ccc;
+}
+
+#slide-content li{
+    list-style-type: disc;
+
+    &::marker{
+        color: var(--mj-primary);
+    }
+}

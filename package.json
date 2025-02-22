@@ -1,0 +1,39 @@
+{
+  "name": "slidev-theme-sli-theme",
+  "version": "0.0.0",
+  "type": "module",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "slidev build example.md",
+    "dev": "slidev example.md",
+    "dev2": "slidev example2.md",
+    "export": "slidev export example.md",
+    "screenshot": "slidev export example.md --format png"
+  },
+  "dependencies": {
+    "@slidev/types": "^51.2.2",
+    "chart.js": "^4.4.8",
+    "vue-chartjs": "^5.3.2"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^51.2.2"
+  },
+  "//": "Learn more: https://sli.dev/guide/write-theme.html",
+  "slidev": {
+    "colorSchema": "both",
+    "defaults": {
+      "aspectRatio": "16/9",
+      "canvasWidth": "1920",
+      "fonts": {
+        "sans": "Nunito Sans",
+        "mono": "Fira Code"
+      }
+    }
+  }
+}
