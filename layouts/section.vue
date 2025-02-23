@@ -36,13 +36,13 @@ import FooterLogo from "../components/FooterLogo.vue";
       background: var(--mj-primary-secondary-gradient);
       border-radius: var(--mj-border-radius);
       margin-right: var(--mj-content-padding);
-      flex-shrink: 0;
+      flex: none;
     }
 
     .content{
       display: flex;
       flex-flow: column nowrap;
-      flex-grow: 1;
+      flex: 1;
     }
   }
 }
