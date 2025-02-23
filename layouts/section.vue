@@ -1,5 +1,6 @@
 <script setup>
 
+import FooterLogo from "../components/FooterLogo.vue";
 </script>
 
 <template>
@@ -10,10 +11,17 @@
         <slot/>
       </div>
     </div>
+    <FooterLogo class="footerLogo" :logo-path="$slidev.themeConfigs.logoPath"/>
   </div>
 </template>
 
 <style scoped>
+.footerLogo{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 .mj-layout-section{
   padding: var(--mj-content-padding);
   position: relative;
