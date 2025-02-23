@@ -11,7 +11,7 @@ import FooterLogo from "../components/FooterLogo.vue";
         <slot/>
       </div>
     </div>
-    <FooterLogo class="footerLogo" :logo-path="$slidev.themeConfigs.logoPath"/>
+    <FooterLogo class="footerLogo" :logo-path="$slidev.themeConfigs.logoPath" v-if="$slidev.themeConfigs.logoPath"/>
   </div>
 </template>
 
